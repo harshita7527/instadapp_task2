@@ -43,7 +43,7 @@ export default {
 }
 
 button {
-  background: rgb(54, 54, 190);
+  background: rgb(125, 125, 223);
   color: white;
   font-size: 0.9rem;
   border-radius: 0.4rem;

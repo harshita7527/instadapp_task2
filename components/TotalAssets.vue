@@ -10,7 +10,7 @@
           <span class="percent gain">+3.56</span>
         </div>
       </div>
-      <div class="supplyButton">
+      <div class="assetButton supplyButton">
         <img src="~/assets/supplied.png" alt="">
       </div>
     </div>
@@ -25,7 +25,7 @@
           <span class="percent lost">-13.56%</span>
         </div>
       </div>
-      <div class="borrowButton">
+      <div class="assetButton borrowButton">
         <img src="~/assets/borrowed.png" alt="">
       </div>
     </div>
@@ -42,7 +42,7 @@ export default {
 .totalAsset{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -50,6 +50,7 @@ export default {
 .asset{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     background: white;
     padding: 1.2rem;
@@ -84,5 +85,16 @@ export default {
 
 .lost{
   color: red;
+}
+
+.assetButton img{
+  height: 40px;
+  widows: 40px;
+}
+
+@media (max-width: 768px) {
+  .assetFig{
+    font-size: 1.1rem;
+  }
 }
 </style>

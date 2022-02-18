@@ -33,4 +33,16 @@ body {
   background: rgb(248, 248, 248);
   margin: 0 8rem;
 }
+
+@media (max-width: 640px) {
+  body{
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    margin: 0 4rem;
+  }
+}
 </style>

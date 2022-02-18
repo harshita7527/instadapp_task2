@@ -196,7 +196,7 @@ export default {
 .protocols{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2rem;
 }
 
@@ -216,8 +216,8 @@ export default {
 }
 
 .protocolLogo{
-    height: 20%;
-    width: 20%;
+    height: 45px;
+    width: 45px;
     margin-right: 1.3rem;
 }
 
@@ -245,6 +245,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: 1px solid rgb(235, 234, 234);
     padding: 1rem 0;
 }
@@ -253,6 +254,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .tokenLogo{
@@ -289,5 +292,15 @@ export default {
 .borrowedInd{
     color: orange;
     background-color: rgb(255, 211, 129);
+}
+
+@media (max-width: 1024px) {
+  .protocols{
+    flex-direction: column;
+  }
+  .protocol{
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 </style>
